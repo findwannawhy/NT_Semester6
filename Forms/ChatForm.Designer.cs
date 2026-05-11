@@ -327,8 +327,9 @@ namespace KR.Forms
             this.openFileDialog1.Filter = "Все файлы (*.*)|*.*";
             this.openFileDialog1.Title  = "Выберите файл для отправки";
 
-            this.saveFileDialog1.Filter = "Все файлы (*.*)|*.*";
-            this.saveFileDialog1.Title  = "Сохранить принятый файл";
+            this.saveFileDialog1.Filter       = "Все файлы (*.*)|*.*";
+            this.saveFileDialog1.Title        = "Сохранить принятый файл";
+            this.saveFileDialog1.AddExtension = false;
 
             // ── ChatForm ──────────────────────────────────────────────────────
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

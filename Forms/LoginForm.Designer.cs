@@ -173,7 +173,7 @@ namespace KR.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode       = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor           = bg1;
-            this.ClientSize          = new System.Drawing.Size(420, 290);
+            this.ClientSize          = new System.Drawing.Size(420, 330);
             this.FormBorderStyle     = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox         = false;
             this.MinimizeBox         = false;
