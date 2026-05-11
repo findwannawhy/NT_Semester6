@@ -1,0 +1,28 @@
+C:\Users\Ильягу\Downloads\KR\KR\bin\Release\KR.exe.config
+C:\Users\Ильягу\Downloads\KR\KR\bin\Release\KR.exe
+C:\Users\Ильягу\Downloads\KR\KR\bin\Release\KR.pdb
+C:\Users\Ильягу\Downloads\KR\KR\obj\Release\KR.csprojAssemblyReference.cache
+C:\Users\Ильягу\Downloads\KR\KR\obj\Release\KR.Forms.ChatForm.resources
+C:\Users\Ильягу\Downloads\KR\KR\obj\Release\KR.Forms.CreatorsForm.resources
+C:\Users\Ильягу\Downloads\KR\KR\obj\Release\KR.Forms.HistoryForm.resources
+C:\Users\Ильягу\Downloads\KR\KR\obj\Release\KR.Forms.LoginForm.resources
+C:\Users\Ильягу\Downloads\KR\KR\obj\Release\KR.Forms.SettingsForm.resources
+C:\Users\Ильягу\Downloads\KR\KR\obj\Release\KR.Properties.Resources.resources
+C:\Users\Ильягу\Downloads\KR\KR\obj\Release\KR.csproj.GenerateResource.cache
+C:\Users\Ильягу\Downloads\KR\KR\obj\Release\KR.csproj.CoreCompileInputs.cache
+C:\Users\Ильягу\Downloads\KR\KR\obj\Release\KR.exe
+C:\Users\Ильягу\Downloads\KR\KR\obj\Release\KR.pdb
+D:\Курсач\Готовый чужой курсач\КР_Боря_Ильягу_Миша\KR_ST\KR\bin\Release\KR.exe.config
+D:\Курсач\Готовый чужой курсач\КР_Боря_Ильягу_Миша\KR_ST\KR\bin\Release\KR.exe
+D:\Курсач\Готовый чужой курсач\КР_Боря_Ильягу_Миша\KR_ST\KR\bin\Release\KR.pdb
+D:\Курсач\Готовый чужой курсач\КР_Боря_Ильягу_Миша\KR_ST\KR\obj\Release\KR.csproj.AssemblyReference.cache
+D:\Курсач\Готовый чужой курсач\КР_Боря_Ильягу_Миша\KR_ST\KR\obj\Release\KR.Forms.ChatForm.resources
+D:\Курсач\Готовый чужой курсач\КР_Боря_Ильягу_Миша\KR_ST\KR\obj\Release\KR.Forms.CreatorsForm.resources
+D:\Курсач\Готовый чужой курсач\КР_Боря_Ильягу_Миша\KR_ST\KR\obj\Release\KR.Forms.HistoryForm.resources
+D:\Курсач\Готовый чужой курсач\КР_Боря_Ильягу_Миша\KR_ST\KR\obj\Release\KR.Forms.LoginForm.resources
+D:\Курсач\Готовый чужой курсач\КР_Боря_Ильягу_Миша\KR_ST\KR\obj\Release\KR.Forms.SettingsForm.resources
+D:\Курсач\Готовый чужой курсач\КР_Боря_Ильягу_Миша\KR_ST\KR\obj\Release\KR.Properties.Resources.resources
+D:\Курсач\Готовый чужой курсач\КР_Боря_Ильягу_Миша\KR_ST\KR\obj\Release\KR.csproj.GenerateResource.cache
+D:\Курсач\Готовый чужой курсач\КР_Боря_Ильягу_Миша\KR_ST\KR\obj\Release\KR.csproj.CoreCompileInputs.cache
+D:\Курсач\Готовый чужой курсач\КР_Боря_Ильягу_Миша\KR_ST\KR\obj\Release\KR.exe
+D:\Курсач\Готовый чужой курсач\КР_Боря_Ильягу_Миша\KR_ST\KR\obj\Release\KR.pdb

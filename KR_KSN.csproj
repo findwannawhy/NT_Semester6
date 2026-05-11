@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>KR</RootNamespace>
+    <AssemblyName>KR_KSN</AssemblyName>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.Ports" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Coding.cs" />
+    <Compile Include="Frames.cs" />
+    <Compile Include="PortSetup.cs" />
+    
+    <Compile Include="Forms\ChatForm.cs" />
+    <Compile Include="Forms\ChatForm.Designer.cs" />
+    <Compile Include="Forms\CreatorsForm.cs" />
+    <Compile Include="Forms\CreatorsForm.Designer.cs" />
+    <Compile Include="Forms\HistoryForm.cs" />
+    <Compile Include="Forms\HistoryForm.Designer.cs" />
+    <Compile Include="Forms\LoginForm.cs" />
+    <Compile Include="Forms\LoginForm.Designer.cs" />
+    <Compile Include="Forms\SettingsForm.cs" />
+    <Compile Include="Forms\SettingsForm.Designer.cs" />
+    
+    <EmbeddedResource Include="Forms\ChatForm.resx" />
+    <EmbeddedResource Include="Forms\CreatorsForm.resx" />
+    <EmbeddedResource Include="Forms\HistoryForm.resx" />
+    <EmbeddedResource Include="Forms\LoginForm.resx" />
+    <EmbeddedResource Include="Forms\SettingsForm.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

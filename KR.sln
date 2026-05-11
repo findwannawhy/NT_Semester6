@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KR_KSN", "KR_KSN.csproj", "{607BCFA6-0CAB-728A-A2DF-05A69C53C767}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{607BCFA6-0CAB-728A-A2DF-05A69C53C767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{607BCFA6-0CAB-728A-A2DF-05A69C53C767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{607BCFA6-0CAB-728A-A2DF-05A69C53C767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{607BCFA6-0CAB-728A-A2DF-05A69C53C767}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {324A9D5F-A559-4DC0-97F2-45E8A0DC87EE}
+	EndGlobalSection
+EndGlobal
