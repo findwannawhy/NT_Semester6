@@ -6,7 +6,7 @@ namespace KR
     /// Variant 5: 2 PCs connected via RS232C null-modem cable.
     /// COM-port parameters are configured by each user individually at startup.
     /// </summary>
-    class PortSetup
+    public class PortSetup
     {
         public string   PortName { get; set; } = "COM1";
         public int      BaudRate { get; set; } = 9600;
