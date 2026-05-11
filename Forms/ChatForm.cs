@@ -210,6 +210,9 @@ namespace KR.Forms
 
         private void HandleTransferComplete()
         {
+            // ACK_DONE also fires this event on the sender side — ignore it there.
+            if (_chunksReceived == 0) return;
+
             SafeInvoke(() =>
             {
                 progressBarRecv.Value = 100;
