@@ -1,3 +1,6 @@
+# Build output
+obj/
+
 # Visual Studio
 .vs/
 *.user
