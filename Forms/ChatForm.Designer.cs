@@ -227,8 +227,8 @@ namespace KR.Forms
             this.cmbErrorMode.Size          = new System.Drawing.Size(322, 22);
             this.cmbErrorMode.Items.AddRange(new object[] {
                 "Нет ошибок (нормальная передача)",
-                "1 бит — Хэмминг исправит автоматически",
-                "2 бита — ошибка не исправима, RET_CHUNK" });
+                "1 бит — ошибка обнаружена, RET_CHUNK",
+                "2 бита — ошибка обнаружена, RET_CHUNK" });
             this.cmbErrorMode.SelectedIndex = 0;
             this.cmbErrorMode.SelectedIndexChanged += new System.EventHandler(this.CmbErrorMode_SelectedIndexChanged);
 

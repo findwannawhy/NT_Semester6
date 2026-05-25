@@ -63,11 +63,15 @@ namespace KR
         // ── Test error injection mode ─────────────────────────────────────────
         /// <summary>
         /// Controls artificial bit-error injection for demonstration purposes.
+        /// The decoder runs in detection-only mode (Hamming correction is
+        /// intentionally disabled, since the true error multiplicity in a real
+        /// channel is unknown), so any injected error pattern triggers RET_CHUNK
+        /// and a retransmission.
+        ///
         /// None    – normal operation, no errors injected.
-        /// OneBit  – one bit is flipped in the Hamming-encoded payload of every
-        ///           CHUNK frame; the [7,4] decoder corrects it automatically.
-        /// TwoBit  – two bits are flipped in the SAME codeword; the SECDED decoder
-        ///           detects but cannot correct the error → sends RET_CHUNK.
+        /// OneBit  – one bit is flipped in the encoded payload of the first
+        ///           CHUNK attempt → non-zero syndrome → RET_CHUNK → resend.
+        /// TwoBit  – two bits flipped in the SAME codeword → detected → RET_CHUNK.
         /// </summary>
         public enum ErrorMode { None, OneBit, TwoBit }
 
@@ -193,21 +197,16 @@ namespace KR
                         int dataLen  = lenBuf[0] | (lenBuf[1] << 8);
                         var encoded  = ReadExact(port, dataLen);
 
-                        var decoded = _coder.DecodeBytes(encoded,
-                            out bool hadCorrection, out bool hadUncorrectable);
+                        var decoded = _coder.DecodeBytes(encoded, out bool errorDetected);
 
-                        if (hadUncorrectable || decoded == null)
+                        if (errorDetected || decoded == null)
                         {
-                            Log($"[{DateTime.Now:HH:mm:ss}] CHUNK #{chunkIdx} — 2-битовая ошибка, исправление невозможно → RET_CHUNK", Color.Crimson);
+                            Log($"[{DateTime.Now:HH:mm:ss}] CHUNK #{chunkIdx} — обнаружена ошибка (ненулевой синдром) → RET_CHUNK", Color.Crimson);
                             SendControlFrame(FrameType.RET_CHUNK, port);
                             break;
                         }
 
-                        if (hadCorrection)
-                            Log($"[{DateTime.Now:HH:mm:ss}] CHUNK #{chunkIdx} — 1-битовая ошибка исправлена кодом Хэмминга ✓", Color.FromArgb(255, 200, 80));
-                        else
-                            Log($"[{DateTime.Now:HH:mm:ss}] CHUNK #{chunkIdx} OK ({decoded.Length} байт)", Color.DodgerBlue);
-
+                        Log($"[{DateTime.Now:HH:mm:ss}] CHUNK #{chunkIdx} OK ({decoded.Length} байт)", Color.DodgerBlue);
                         SendControlFrame(FrameType.ACK_CHUNK, port);
                         OnChunkReceived?.Invoke(chunkIdx, decoded);
                     }

@@ -344,8 +344,8 @@ namespace KR.Forms
             };
             string desc = cmbErrorMode.SelectedIndex switch
             {
-                1 => "⚡ Режим: 1-битовая ошибка (Хэмминг исправит)",
-                2 => "💥 Режим: 2-битовая ошибка (RET_CHUNK, повтор)",
+                1 => "⚡ Режим: 1-битовая ошибка (обнаружение → RET_CHUNK, повтор)",
+                2 => "💥 Режим: 2-битовая ошибка (обнаружение → RET_CHUNK, повтор)",
                 _ => "✅ Режим: без ошибок",
             };
             AppendLog($"[{DateTime.Now:HH:mm:ss}] {desc}", Color.FromArgb(255, 200, 80));
